@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body id='splash'>
+    <h1><%= title %></h1>
+    <div id='container'>
+      <form action = "/process" method="post">
+        <p><strong>Please Enter Your Name</strong></p>
+        <input type="text" required name="name" />
+        <div class='clear'></div>
+        <input type="submit" value="Enter" />
+        <div class='clear'></div>
+      </form>
+      <div class='clear'></div>
+    </div><!--end of div container-->
+  </body>
+</html>

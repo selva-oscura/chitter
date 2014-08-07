@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          io = io.connect();
+          io.on('new_user_broadcast', function(data){
+            console.log(data);
+          })
+        })
+    </script>
+  </head>
+  <body>
+  	<div id="user_list_space">
+  		<h2>Active Users</h2>
+  		<div class="active_user">
+  			<div class="user_color" style="background-color:#0033ff"></div>
+  			<h3 class="user_name" style="color:#0033ff;">Someone</h3>
+  			
+  		</div>
+  		<div class="active_user">
+  			<div class="user_color" style="background-color:#ff3300;"></div>
+  			<h3 class="user_name" style="color:#ff3300;">Someone else</h3>
+  		</div>
+  	</div>
+  	<div id="chat_space">
+<!-- 	    <h1><%= title %></h1> -->
+	    <h2 style="color:#0033ff;">Welcome to <%= title %></h2>
+  	</div>
+  </body>
+</html>

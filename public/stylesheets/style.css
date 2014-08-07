@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+/*  padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p, a, h1, h2, h3, h4, h5, h6{
+	padding:12px 6px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+#splash{
+	background-color: rgba(0,183,255, 0.5);
+	color:white;
+}
+
+#container{
+	width:225px;
+	margin:24px auto;
+	border:2px solid #0000ee;
+	padding:24px;
+}
+
+#container form{
+	margin:6px;
+}
+
+#container p{
+	width:196px;
+	margin:0px 12px;
+}
+
+#container form input{
+	width:196px;
+	height:24px;
+	margin:12px;
+}
+
+#container form input[type=submit] {
+	background-color: #0000ee;
+	color:white;
+	height:24px;
+	width:196px;
+	margin:12px;
+	border:2px solid #0000ff;
+}
+
+#user_list_space{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	background-color: rgba(0,183,255, 0.5);
+	color:white;
+}
+
+#chat_space{
+	position: absolute;
+	top: 0;
+	left: 200px;
+	bottom: 0;
+	width:80%;
+}
+
+#user_list_space .active_user{
+	margin:5px;
+	width:190px;
+	min-height:48px;
+	background:white;
+	color:black;
+}
+
+#user_list_space .active_user .user_color{
+	height:48px;
+	width:12px;
+	float:left;
+}
+
+#user_list_space .active_user .user_name{
+	width:160px;
+	float:left;
+}
