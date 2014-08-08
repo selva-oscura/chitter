@@ -34,6 +34,23 @@ a {
 	color:white;
 }
 
+#exit{
+	background-color: #7fdafe;
+	font-weight: bolder;
+	position:absolute;
+	top:12px;
+	right:12px;
+/*	float:right;
+	margin:12px;*/
+	padding:4px 6px;
+	color:white;
+}
+
+#exit:hover{
+	background-color: #0033ff;
+}
+
+
 #container{
 	width:225px;
 	margin:24px auto;
@@ -99,4 +116,32 @@ a {
 #user_list_space .active_user .user_name{
 	width:160px;
 	float:left;
+}
+
+#form{
+	color:#7fdafe;
+}
+
+#form label{
+	position: absolute;
+	bottom:36px;
+	left:4px;
+}
+
+#form textarea{
+	border:1px solid #7fdafe;
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#0033ff;
+}
+
+#submit{
+	position:absolute;
+	bottom:0;
+	left:20px;
+	background-color: #7fdafe;
+	font-weight: bolder;
+	padding:4px 6px;
+	color:white;
 }
