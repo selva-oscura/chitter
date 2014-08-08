@@ -40,8 +40,6 @@ a {
 	position:absolute;
 	top:12px;
 	right:12px;
-/*	float:right;
-	margin:12px;*/
 	padding:4px 6px;
 	color:white;
 }
@@ -116,6 +114,11 @@ a {
 #user_list_space .active_user .user_name{
 	width:160px;
 	float:left;
+}
+
+#chitter_space{
+	height:400px;
+	overflow:auto;
 }
 
 #form{
