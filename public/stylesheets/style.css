@@ -127,6 +127,9 @@ a {
 
 #user_list .active_user h3, #user_list .active_user h4{
 	padding:6px 2px;
+	width:166px;
+	overflow:hidden;
+	height:20px;
 }
 
 #chitter_space{
