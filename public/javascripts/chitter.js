@@ -69,7 +69,7 @@ $(document).ready(function(){
 		me={name: data.current_user.name, colour: data.current_user.colour, id: data.current_user.id};
 	});
 
-	// user_arrived triggers 
+	// user_arrived broadcast triggers 
 	//	appending div with new user's name and colour to list of users 
 	//	appending of announcement of user arrival announcement to messages area (chitter_space)
 	io.on('user_arrived', function(data){
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		$('#chitter_space').scrollTop(height);
 	});
 
-	// user_departed triggers 
+	// user_departed broadcast triggers 
 	//	removal of div with new user's name and colour to list of users 
 	//	appending of announcement of user departure announcement to messages area (chitter_space)
 	io.on('user_departed', function(data){

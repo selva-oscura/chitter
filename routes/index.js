@@ -36,7 +36,7 @@ module.exports = function Route(app){
 
   // checking connection
   app.io.on('connection', function(req){
-    console.log('Connecting, baby!');
+    console.log('Release the hounds of Node!');
   });
 
   // request_setup (sent by most recent arrival)
