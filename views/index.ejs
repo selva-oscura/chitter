@@ -2,19 +2,43 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
   </head>
   <body id='splash'>
-    <h1><%= title %></h1>
-    <div id='container'>
+    <div id='splash_container'>
+      <h1><%= title %></h1>
       <form action = "/process" method="post">
         <p><strong>Please Enter Your Name</strong></p>
-        <input type="text" required name="name" />
+        <input type="text" required name="name" autofocus />
         <div class='clear'></div>
-        <input type="submit" value="Enter" />
+        <input type="submit" class='button' value="ENTER" />
         <div class='clear'></div>
       </form>
       <div class='clear'></div>
     </div><!--end of div container-->
+    <script>
+      function sizeSplashElements(){        
+        var browserDimensions={};
+        var max_dimension;
+        browserDimensions.x=$(window).width();
+        browserDimensions.y=$(window).height();
+        var containerDimensions={};
+        containerDimensions.x=275;
+        containerDimensions.y=225;
+        var spacing={};
+        spacing.x=Math.floor((browserDimensions.x-containerDimensions.x)/2);
+        spacing.y=Math.floor((browserDimensions.y-containerDimensions.y)/2);
+        $(splash_container)
+          .css('margin-top', spacing.y)
+          .css('margin-left', spacing.x);
+      }
+      
+      $(document).ready(function(){
+        sizeSplashElements();
+      });
+      $(window).on('resize', sizeSplashElements);
+    </script>
   </body>
 </html>
