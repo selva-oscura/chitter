@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -61,6 +62,9 @@
         $(chitter_space)
           .css('width', chat_width-10)
           .css('height', browserDimensions.y-150);
+                //get total height of overflow element and pass to scrollTop to push slider to bottom of page.
+        var height = $('#chitter_space')[0].scrollHeight;
+        $('#chitter_space').scrollTop(height);
       } 
       $(document).ready(function(){
         sizeChatElements();
